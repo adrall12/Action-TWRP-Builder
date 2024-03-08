@@ -146,6 +146,7 @@ jobs:
 
     - name: Building recovery
       run: |
+        mv ./vendor/omni ./vendor/twrp
         ls
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
